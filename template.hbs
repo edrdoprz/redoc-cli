@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf8" />
+  <title>{{title}}</title>
+  <!-- needed for adaptive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    div.scrollbar-container {
+      margin-top: 30px;
+    }
+
+    div.api-content {
+      padding-bottom: 20px;
+    }
+
+    div.api-info-section.section {
+      padding: 40px 0 0 0;
+    }
+
+    div.right-panel-tabs .react-tabs__tab-panel {
+      background: rgba(0, 0, 0, 0.25);
+      box-shadow: inset 0 -2px 0 0 #000000;
+    }
+
+    div.section {
+      padding: 60px 0 0 0;
+    }
+
+    div.section .section {
+      padding: 0;
+    }
+
+    div.section h2.security-defs-heading {
+      color: #757575;
+      margin-top: 0;
+    }
+
+    div.section h2.operation-heading {
+      color: #4f657b;
+      font-size: 1.34em;
+    }
+
+    div.redoc-markdown {
+      font-weight: 300;
+    }
+
+    div.redoc-markdown>p:first-child {
+      margin-top: 0;
+    }
+
+    div.redoc-markdown>ol li {
+      margin: 15px 0;
+    }
+
+    div.redoc-markdown>ul li {
+      margin: 15px 0;
+    }
+
+    div.required-label {
+      color: #F15220;
+      font-size: 11px;
+    }
+
+    div.securities-column {
+      align-items: center;
+      display: flex;
+    }
+
+    div.security-requirements {
+      margin: 0;
+    }
+
+    h3.right-panel-header {
+      font-size: 1em;
+      letter-spacing: 2px;
+      color: #bababa;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    input.search-input {
+      margin: 0 15px;
+      font-family: Open Sans, sans-serif;
+      padding: 5px 10px 10px 20px;
+      border-bottom: 1px solid #bababa;
+      font-weight: 600;
+      font-size: 14px;
+      color: #757575;
+    }
+
+    input.search-input::-webkit-input-placeholder {
+      color: #949494;
+    }
+
+    .redoc-json span.token.number {
+      color: #3DB58E;
+    }
+
+    .redoc-json span.token.string {
+      color: #EEC660;
+    }
+
+    .redoc-json span.token.string.property {
+      color: #AAAAAA;
+    }
+
+    ul.side-menu-items label {
+      background-color: transparent;
+      cursor: pointer;
+      color: #4f657b;
+      display: flex;
+      font-family: Open Sans, sans-serif;
+      font-size: .99em;
+      justify-content: space-between;
+      margin: 0;
+      padding: 12.5px 20px;
+      text-transform: none;
+    }
+
+    ul.side-menu-items label.-depth2 {
+      display: block;
+    }
+
+    ul.side-menu-items label.active.-depth2 {
+      font-weight: normal;
+      letter-spacing: initial;
+    }
+
+    ul.side-menu-items label svg.shelf-icon {
+      fill: #949494;
+      height: 18px;
+      width: 18px;
+    }
+
+    ul.side-menu-items label svg.shelf-icon>polygon {
+      fill: #949494;
+    }
+
+    ul.side-menu-items label.active {
+      border-radius: 2px;
+      box-shadow: inset 0 -2px 0 0 #efefef;
+      background-color: #FFF;
+      color: #0880bc;
+      font-weight: 600;
+      line-height: 20px;
+      text-transform: none;
+    }
+
+    ul.side-menu-items label.active:hover {
+      background-color: #FFF;
+    }
+
+    ul.side-menu-items label:hover {
+      background-color: transparent;
+      color: #0880bc;
+    }
+
+    span.operation-type {
+      font-family: 'Open Sans', sans-serif;
+      width: 26px;
+    }
+
+    svg.search-icon {
+      left: 30px;
+      height: 1em;
+      margin-top: 7px;
+    }
+
+    svg.search-icon {
+      left: 30px;
+      height: 1em;
+      margin-top: 7px;
+    }
+
+    svg.search-icon path {
+      fill: #949494;
+    }
+
+    td.property-details-cell .redoc-markdown {
+      font-size: 14px;
+    }
+
+    .grad-bar {
+      position: fixed;
+      height: 10px;
+      background-image: linear-gradient(to right, #01b3c1, #00b1c0 17%, #00a0c5 41%, #0b8fcf 68%, #5f3a97);
+      width: 100%;
+      z-index: 51;
+    }
+
+    .menu-content {
+      padding: 0 15px;
+    }
+
+    .api-logo {
+      width: 80%;
+      margin: 30px 15px 20px;
+    }
+
+    .redoc-wrap {
+      color: #757575;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    svg.shelf-icon {
+      fill: #949494;
+    }
+
+    svg.shelf-icon>polygon {
+      fill: #949494;
+    }
+  </style>
+  <div class="grad-bar"></div>
+  {{{redocHead}}}
+  <link href="https://fonts.googleapis.com/css?family=Open Sans:300,400,700|Open Sans:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700" rel="stylesheet">
+</head>
+
+<body>
+  {{{redocHTML}}}
+</body>
+
+</html>
